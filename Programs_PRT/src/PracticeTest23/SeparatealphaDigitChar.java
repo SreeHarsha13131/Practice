@@ -1,0 +1,28 @@
+package PracticeTest23;
+
+public class SeparatealphaDigitChar {
+
+	public static void main(String[] args) {
+		String  s = "AB12#%0D";
+		String alpha = " ";
+		String num = " ";
+		String spl = " ";
+		for (int i=0;i<s.length();i++) {
+			if((s.charAt(i)>='A' && s.charAt(i)<='Z') || (s.charAt(i)>='a' && s.charAt(i)<='z'))
+			{
+				alpha = alpha+s.charAt(i);
+			}
+			else if (s.charAt(i)>=48 && s.charAt(i)<=57) {
+				num = num+s.charAt(i);
+			}
+			else
+			{
+				spl =spl+s.charAt(i);
+			}
+
+		}
+		System.out.print(alpha + " "+ num+""+ spl);
+
+	}
+
+}
