@@ -15,5 +15,7 @@ public class A2bec4Print {
 			}
 		}
 		System.out.println(s2);
+		System.out.println(s2);
+
 	}
 }
